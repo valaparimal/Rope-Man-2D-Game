@@ -1,0 +1,3509 @@
+[gd_scene load_steps=17 format=3 uid="uid://y6pfttl20pu2"]
+
+[ext_resource type="Script" path="res://scenes/play/Level_Container/level1/root_level1.gd" id="1_nlbev"]
+[ext_resource type="Texture2D" uid="uid://bpgmeakoofax1" path="res://assets/sprites/background.png" id="2_ssy5w"]
+[ext_resource type="PackedScene" uid="uid://c5y0sgx214s7b" path="res://scenes/play/same_assets_fro_all_level/Player2.tscn" id="4_432sl"]
+[ext_resource type="PackedScene" uid="uid://decrdn6dqpqwd" path="res://scenes/play/same_assets_fro_all_level/ShiftDownPath.tscn" id="4_imrt6"]
+[ext_resource type="PackedScene" uid="uid://dhddu4svkvbbq" path="res://scenes/play/same_assets_fro_all_level/path.tscn" id="5_ihg3k"]
+[ext_resource type="PackedScene" uid="uid://cxd27x23lhlq0" path="res://scenes/play/same_assets_fro_all_level/obstacles.tscn" id="6_lfvrd"]
+[ext_resource type="PackedScene" uid="uid://ce74tu8herehw" path="res://scenes/play/same_assets_fro_all_level/GreenGem.tscn" id="7_ed0o4"]
+[ext_resource type="PackedScene" uid="uid://tngsh1g54q0a" path="res://scenes/play/same_assets_fro_all_level/zombie_brute.tscn" id="8_87an7"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="9_sf2xh"]
+[ext_resource type="Script" path="res://CloseButton.gd" id="10_rblt7"]
+[ext_resource type="Texture2D" uid="uid://2c2gltcnsox1" path="res://assets/Victory.png" id="11_3iv1k"]
+[ext_resource type="Texture2D" uid="uid://dn7iusxdgo67l" path="res://assets/Defeat.png" id="12_tgu3i"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="14_atfoh"]
+[ext_resource type="Script" path="res://scenes/play/Level_Container/level1/OkButton.gd" id="14_imvod"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8g7xv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27gj7"]
+
+[node name="Lavel1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 28.0
+offset_right = 32.0
+offset_bottom = 28.0
+
+[node name="container" type="Sprite2D" parent="."]
+script = ExtResource("1_nlbev")
+
+[node name="root_level1" type="Sprite2D" parent="container"]
+
+[node name="background" type="Node2D" parent="container/root_level1"]
+
+[node name="Background_raw_1" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background20" type="Sprite2D" parent="container/root_level1/background/Background_raw_1"]
+position = Vector2(-64, 4)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_2" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 62)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_2"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_3" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 124)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_3"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_4" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 186)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(-64, 1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_4"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_5" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 248)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_5"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_6" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 310)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_6"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_7" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 372)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(-64, 1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_7"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_8" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 434)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_8"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_9" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 496)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(-64, 1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_9"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_10" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(64, 560)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(-64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_10"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background_raw_11" type="Sprite2D" parent="container/root_level1/background"]
+position = Vector2(65, 622)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background2" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(-64, 1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background3" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background4" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(64, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background5" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(128, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background6" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(192, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background7" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(256, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background8" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(384, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background9" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(320, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background10" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(448, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background11" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(512, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background12" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(576, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background13" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(640, 0)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background14" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(704, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background15" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(768, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background16" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(832, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background17" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(896, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background18" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(1024, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Background19" type="Sprite2D" parent="container/root_level1/background/Background_raw_11"]
+position = Vector2(960, -1)
+texture = ExtResource("2_ssy5w")
+
+[node name="Enemy" type="Node2D" parent="container/root_level1"]
+
+[node name="ShiftDownPathContaainer" type="Node2D" parent="container/root_level1"]
+
+[node name="ShiftDownPath" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(91, 518)
+
+[node name="ShiftDownPath2" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(107, 518)
+
+[node name="ShiftDownPath3" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(384, 518)
+
+[node name="ShiftDownPath4" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(400, 518)
+
+[node name="ShiftDownPath5" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(416, 518)
+
+[node name="ShiftDownPath6" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(820, 518)
+
+[node name="ShiftDownPath7" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(836, 518)
+
+[node name="ShiftDownPath8" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(852, 518)
+
+[node name="ShiftDownPath9" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(868, 518)
+
+[node name="ShiftDownPath10" parent="container/root_level1/ShiftDownPathContaainer" instance=ExtResource("4_imrt6")]
+position = Vector2(884, 518)
+
+[node name="path_box" type="Node2D" parent="container/root_level1"]
+position = Vector2(-13, 129)
+
+[node name="path1" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(2, 29)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path1"]
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(130, 0)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(305, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(435, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(764, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(565, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(893, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path1"]
+position = Vector2(1023, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path1/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path2" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(2, 29)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(145, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(275, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(451, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(581, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(910, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(711, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(1039, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path2"]
+position = Vector2(-18, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path2/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path3" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(3, 167)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path3"]
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-17, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(31, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(15, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-1, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(48, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(96, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(80, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(64, -123)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(130, 0)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-16, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(33, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(17, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(1, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(50, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(98, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(82, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(66, -123)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(259, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(389, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(763, 3)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(635, 3)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(893, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path3"]
+position = Vector2(1023, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path3/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path4" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(3, 167)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(145, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(275, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(451, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(581, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(910, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(711, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(1039, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path4"]
+position = Vector2(-18, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path4/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path5" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(2, 306)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path5"]
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(130, 0)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(305, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(435, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(764, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(565, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(893, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path5"]
+position = Vector2(1023, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path5/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path6" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(2, 306)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(145, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(275, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(451, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(581, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(910, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(711, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(1039, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path6"]
+position = Vector2(-18, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path6/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="path7" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(3, 444)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path7"]
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-17, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(31, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(15, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-1, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(48, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(96, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(80, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(64, -123)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(130, 0)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-15, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(33, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(17, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(1, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(50, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(98, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(82, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(66, -123)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(259, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(389, 1)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(763, 3)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(635, 3)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(893, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-12, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(36, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(20, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(4, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(53, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(101, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(85, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(69, -123)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path7"]
+position = Vector2(1023, 2)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-11, -123)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(37, -123)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(21, -123)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(5, -123)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(54, -123)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(102, -123)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(86, -123)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path7/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(70, -123)
+
+[node name="path8" type="Node2D" parent="container/root_level1/path_box"]
+position = Vector2(3, 444)
+
+[node name="8_path_box" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(145, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box2" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(275, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box2" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box3" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(451, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box3" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box4" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(581, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box4" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box5" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(910, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -125)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -125)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -125)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -125)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -125)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -125)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -125)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box5" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -125)
+
+[node name="8_path_box6" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(711, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box6" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="8_path_box7" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(1039, 70)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -125)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -125)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -125)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -125)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -125)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -125)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -125)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box7" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -125)
+
+[node name="8_path_box8" type="Node2D" parent="container/root_level1/path_box/path8"]
+position = Vector2(-18, 69)
+
+[node name="Path_Box" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(-13, -124)
+
+[node name="Path_Box2" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -124)
+
+[node name="Path_Box3" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(19, -124)
+
+[node name="Path_Box4" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, -124)
+
+[node name="Path_Box5" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -124)
+
+[node name="Path_Box6" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(100, -124)
+
+[node name="Path_Box7" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(84, -124)
+
+[node name="Path_Box8" parent="container/root_level1/path_box/path8/8_path_box8" instance=ExtResource("5_ihg3k")]
+position = Vector2(68, -124)
+
+[node name="Break" type="Node2D" parent="container/root_level1"]
+
+[node name="break_path1" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path1" instance=ExtResource("6_lfvrd")]
+position = Vector2(174, 15)
+
+[node name="Obstacles2" parent="container/root_level1/Break/break_path1" instance=ExtResource("6_lfvrd")]
+position = Vector2(403, 16)
+
+[node name="Obstacles3" parent="container/root_level1/Break/break_path1" instance=ExtResource("6_lfvrd")]
+position = Vector2(654, 16)
+
+[node name="Obstacles4" parent="container/root_level1/Break/break_path1" instance=ExtResource("6_lfvrd")]
+position = Vector2(956, 17)
+
+[node name="break_path2" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path2" instance=ExtResource("6_lfvrd")]
+position = Vector2(16, 84)
+
+[node name="Obstacles2" parent="container/root_level1/Break/break_path2" instance=ExtResource("6_lfvrd")]
+position = Vector2(245, 84)
+
+[node name="Obstacles3" parent="container/root_level1/Break/break_path2" instance=ExtResource("6_lfvrd")]
+position = Vector2(497, 84)
+
+[node name="Obstacles4" parent="container/root_level1/Break/break_path2" instance=ExtResource("6_lfvrd")]
+position = Vector2(799, 84)
+
+[node name="break_path3" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path3" instance=ExtResource("6_lfvrd")]
+position = Vector2(217, 154)
+
+[node name="Obstacles2" parent="container/root_level1/Break/break_path3" instance=ExtResource("6_lfvrd")]
+position = Vector2(446, 155)
+
+[node name="Obstacles3" parent="container/root_level1/Break/break_path3" instance=ExtResource("6_lfvrd")]
+position = Vector2(697, 156)
+
+[node name="break_path4" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(571, 222)
+
+[node name="Obstacles2" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(800, 222)
+
+[node name="Obstacles3" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(1050, 223)
+
+[node name="Obstacles4" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(549, 201)
+
+[node name="Obstacles5" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(549, 222)
+
+[node name="Obstacles6" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(527, 222)
+
+[node name="Obstacles7" parent="container/root_level1/Break/break_path4" instance=ExtResource("6_lfvrd")]
+position = Vector2(72, 222)
+
+[node name="break_path5" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path5" instance=ExtResource("6_lfvrd")]
+position = Vector2(-21, 361)
+
+[node name="Obstacles2" parent="container/root_level1/Break/break_path5" instance=ExtResource("6_lfvrd")]
+position = Vector2(208, 362)
+
+[node name="Obstacles3" parent="container/root_level1/Break/break_path5" instance=ExtResource("6_lfvrd")]
+position = Vector2(459, 361)
+
+[node name="Obstacles4" parent="container/root_level1/Break/break_path5" instance=ExtResource("6_lfvrd")]
+position = Vector2(761, 362)
+
+[node name="break_path6" type="Node2D" parent="container/root_level1/Break"]
+
+[node name="Obstacles" parent="container/root_level1/Break/break_path6" instance=ExtResource("6_lfvrd")]
+position = Vector2(126, 431)
+
+[node name="Obstacles4" parent="container/root_level1/Break/break_path6" instance=ExtResource("6_lfvrd")]
+position = Vector2(905, 433)
+
+[node name="Gems" type="Node2D" parent="container/root_level1"]
+
+[node name="GemPath1" type="Node2D" parent="container/root_level1/Gems"]
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(-16, 4)
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(1094, 16)
+
+[node name="GreenGem3" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(120, 6)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(174, -11)
+
+[node name="GreenGem7" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(402, -13)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(654, -14)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(807, 11)
+
+[node name="GreenGem10" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(889, 12)
+
+[node name="GreenGem11" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(539, 11)
+
+[node name="GreenGem12" parent="container/root_level1/Gems/GemPath1" instance=ExtResource("7_ed0o4")]
+position = Vector2(957, -9)
+
+[node name="GemPath2" type="Node2D" parent="container/root_level1/Gems"]
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(134, 81)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(17, 58)
+
+[node name="GreenGem5" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(336, 82)
+
+[node name="GreenGem7" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(987, 77)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(734, 62)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(533, 85)
+
+[node name="GreenGem10" parent="container/root_level1/Gems/GemPath2" instance=ExtResource("7_ed0o4")]
+position = Vector2(1088, 77)
+
+[node name="GemPath3" type="Node2D" parent="container/root_level1/Gems"]
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(28, 143)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(217, 123)
+
+[node name="GreenGem5" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(341, 151)
+
+[node name="GreenGem7" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(446, 126)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(698, 125)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(851, 150)
+
+[node name="GreenGem11" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(550, 175)
+
+[node name="GreenGem12" parent="container/root_level1/Gems/GemPath3" instance=ExtResource("7_ed0o4")]
+position = Vector2(1018, 151)
+
+[node name="GemPath4" type="Node2D" parent="container/root_level1/Gems"]
+position = Vector2(6, 201)
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(-16, 4)
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(1095, 9)
+
+[node name="GreenGem3" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(120, 6)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(208, 6)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(734, 8)
+
+[node name="GreenGem10" parent="container/root_level1/Gems/GemPath4" instance=ExtResource("7_ed0o4")]
+position = Vector2(891, 8)
+
+[node name="GemPath5" type="Node2D" parent="container/root_level1/Gems"]
+position = Vector2(6, 201)
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(127, 75)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(-10, 76)
+
+[node name="GreenGem5" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(336, 76)
+
+[node name="GreenGem7" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(987, 77)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(851, 81)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(534, 77)
+
+[node name="GreenGem11" parent="container/root_level1/Gems/GemPath5" instance=ExtResource("7_ed0o4")]
+position = Vector2(670, 79)
+
+[node name="GemPath6" type="Node2D" parent="container/root_level1/Gems"]
+position = Vector2(6, 201)
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(28, 143)
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(1101, 153)
+
+[node name="GreenGem3" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(164, 145)
+
+[node name="GreenGem5" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(341, 151)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(683, 147)
+
+[node name="GreenGem10" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(933, 151)
+
+[node name="GreenGem11" parent="container/root_level1/Gems/GemPath6" instance=ExtResource("7_ed0o4")]
+position = Vector2(456, 136)
+
+[node name="GemPath7" type="Node2D" parent="container/root_level1/Gems"]
+position = Vector2(7, 290)
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(27, 132)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(216, 130)
+
+[node name="GreenGem5" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(316, 132)
+
+[node name="GreenGem7" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(448, 131)
+
+[node name="GreenGem8" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(706, 132)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(842, 131)
+
+[node name="GreenGem11" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(551, 201)
+
+[node name="GreenGem12" parent="container/root_level1/Gems/GemPath7" instance=ExtResource("7_ed0o4")]
+position = Vector2(1020, 133)
+
+[node name="GemPath8" type="Node2D" parent="container/root_level1/Gems"]
+position = Vector2(13, 491)
+
+[node name="GreenGem" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(-16, 0)
+
+[node name="GreenGem2" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(1095, 5)
+
+[node name="GreenGem3" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(120, 0)
+
+[node name="GreenGem4" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(208, 0)
+
+[node name="GreenGem9" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(735, 1)
+
+[node name="GreenGem10" parent="container/root_level1/Gems/GemPath8" instance=ExtResource("7_ed0o4")]
+position = Vector2(891, 3)
+
+[node name="Area2D" type="Area2D" parent="container/root_level1"]
+position = Vector2(1, 48)
+
+[node name="wall" type="StaticBody2D" parent="container/root_level1"]
+
+[node name="top_wall" type="Node2D" parent="container/root_level1/wall"]
+
+[node name="Path_Box" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-33, -30)
+
+[node name="Path_Box2" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-16, -30)
+
+[node name="Path_Box3" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1, -30)
+
+[node name="Path_Box4" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(18, -30)
+
+[node name="Path_Box5" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(35, -30)
+
+[node name="Path_Box6" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(52, -30)
+
+[node name="Path_Box7" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(69, -30)
+
+[node name="Path_Box8" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(86, -30)
+
+[node name="Path_Box9" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(102, -30)
+
+[node name="Path_Box10" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(119, -30)
+
+[node name="Path_Box11" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(136, -30)
+
+[node name="Path_Box12" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(153, -30)
+
+[node name="Path_Box13" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(170, -30)
+
+[node name="Path_Box14" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(187, -30)
+
+[node name="Path_Box15" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(204, -30)
+
+[node name="Path_Box16" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(221, -30)
+
+[node name="Path_Box17" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(237, -30)
+
+[node name="Path_Box18" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(254, -30)
+
+[node name="Path_Box19" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(271, -30)
+
+[node name="Path_Box20" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(288, -30)
+
+[node name="Path_Box21" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(305, -30)
+
+[node name="Path_Box22" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(322, -30)
+
+[node name="Path_Box23" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(339, -30)
+
+[node name="Path_Box24" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(356, -30)
+
+[node name="Path_Box25" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(372, -30)
+
+[node name="Path_Box26" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(389, -30)
+
+[node name="Path_Box27" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(406, -30)
+
+[node name="Path_Box28" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(423, -30)
+
+[node name="Path_Box29" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(440, -30)
+
+[node name="Path_Box30" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(457, -30)
+
+[node name="Path_Box31" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(474, -30)
+
+[node name="Path_Box32" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(491, -30)
+
+[node name="Path_Box33" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(508, -30)
+
+[node name="Path_Box34" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(525, -30)
+
+[node name="Path_Box35" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(542, -30)
+
+[node name="Path_Box36" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(559, -30)
+
+[node name="Path_Box37" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(576, -30)
+
+[node name="Path_Box38" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(593, -30)
+
+[node name="Path_Box39" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(610, -30)
+
+[node name="Path_Box40" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(627, -30)
+
+[node name="Path_Box41" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(643, -30)
+
+[node name="Path_Box42" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(660, -30)
+
+[node name="Path_Box43" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(677, -30)
+
+[node name="Path_Box44" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(694, -30)
+
+[node name="Path_Box45" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(711, -30)
+
+[node name="Path_Box46" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(728, -30)
+
+[node name="Path_Box47" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(745, -30)
+
+[node name="Path_Box48" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(762, -30)
+
+[node name="Path_Box49" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(778, -30)
+
+[node name="Path_Box50" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(795, -30)
+
+[node name="Path_Box51" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(812, -30)
+
+[node name="Path_Box52" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(829, -30)
+
+[node name="Path_Box53" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(846, -30)
+
+[node name="Path_Box54" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(863, -30)
+
+[node name="Path_Box55" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(880, -30)
+
+[node name="Path_Box56" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(897, -30)
+
+[node name="Path_Box57" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(913, -30)
+
+[node name="Path_Box58" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(930, -30)
+
+[node name="Path_Box59" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(947, -30)
+
+[node name="Path_Box60" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(964, -30)
+
+[node name="Path_Box61" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(981, -30)
+
+[node name="Path_Box62" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(998, -30)
+
+[node name="Path_Box63" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1015, -30)
+
+[node name="Path_Box64" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1032, -30)
+
+[node name="Path_Box65" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1050, -30)
+
+[node name="Path_Box66" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1067, -30)
+
+[node name="Path_Box67" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1084, -30)
+
+[node name="Path_Box68" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1101, -30)
+
+[node name="Path_Box69" parent="container/root_level1/wall/top_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1118, -30)
+
+[node name="bottom_wall" type="Node2D" parent="container/root_level1/wall"]
+
+[node name="Path_Box" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-31, 614)
+rotation = 3.11858
+
+[node name="Path_Box2" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-14, 614)
+rotation = 3.11858
+
+[node name="Path_Box3" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(3, 614)
+rotation = 3.11858
+
+[node name="Path_Box4" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(20, 614)
+rotation = 3.11858
+
+[node name="Path_Box5" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(37, 614)
+rotation = 3.11858
+
+[node name="Path_Box6" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(54, 614)
+rotation = 3.11858
+
+[node name="Path_Box7" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(71, 614)
+rotation = 3.11858
+
+[node name="Path_Box8" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(88, 614)
+rotation = 3.11858
+
+[node name="Path_Box9" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(104, 614)
+rotation = 3.11858
+
+[node name="Path_Box10" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(121, 614)
+rotation = 3.11858
+
+[node name="Path_Box11" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(138, 614)
+rotation = 3.11858
+
+[node name="Path_Box12" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(155, 614)
+rotation = 3.11858
+
+[node name="Path_Box13" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(172, 614)
+rotation = 3.11858
+
+[node name="Path_Box14" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(189, 614)
+rotation = 3.11858
+
+[node name="Path_Box15" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(206, 614)
+rotation = 3.11858
+
+[node name="Path_Box16" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(223, 614)
+rotation = 3.11858
+
+[node name="Path_Box17" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(239, 614)
+rotation = 3.11858
+
+[node name="Path_Box18" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(256, 614)
+rotation = 3.11858
+
+[node name="Path_Box19" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(273, 614)
+rotation = 3.11858
+
+[node name="Path_Box20" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(290, 614)
+rotation = 3.11858
+
+[node name="Path_Box21" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(307, 614)
+rotation = 3.11858
+
+[node name="Path_Box22" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(324, 614)
+rotation = 3.11858
+
+[node name="Path_Box23" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(341, 614)
+rotation = 3.11858
+
+[node name="Path_Box24" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(358, 614)
+rotation = 3.11858
+
+[node name="Path_Box25" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(374, 614)
+rotation = 3.11858
+
+[node name="Path_Box26" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(391, 614)
+rotation = 3.11858
+
+[node name="Path_Box27" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(408, 614)
+rotation = 3.11858
+
+[node name="Path_Box28" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(425, 614)
+rotation = 3.11858
+
+[node name="Path_Box29" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(442, 614)
+rotation = 3.11858
+
+[node name="Path_Box30" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(459, 614)
+rotation = 3.11858
+
+[node name="Path_Box31" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(476, 614)
+rotation = 3.11858
+
+[node name="Path_Box32" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(493, 614)
+rotation = 3.11858
+
+[node name="Path_Box33" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(510, 614)
+rotation = 3.11858
+
+[node name="Path_Box34" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(527, 614)
+rotation = 3.11858
+
+[node name="Path_Box35" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(544, 614)
+rotation = 3.11858
+
+[node name="Path_Box36" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(561, 614)
+rotation = 3.11858
+
+[node name="Path_Box37" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(578, 614)
+rotation = 3.11858
+
+[node name="Path_Box38" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(595, 614)
+rotation = 3.11858
+
+[node name="Path_Box39" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(612, 614)
+rotation = 3.11858
+
+[node name="Path_Box40" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(629, 614)
+rotation = 3.11858
+
+[node name="Path_Box41" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(645, 614)
+rotation = 3.11858
+
+[node name="Path_Box42" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(662, 614)
+rotation = 3.11858
+
+[node name="Path_Box43" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(679, 614)
+rotation = 3.11858
+
+[node name="Path_Box44" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(696, 614)
+rotation = 3.11858
+
+[node name="Path_Box45" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(713, 614)
+rotation = 3.11858
+
+[node name="Path_Box46" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(730, 614)
+rotation = 3.11858
+
+[node name="Path_Box47" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(747, 614)
+rotation = 3.11858
+
+[node name="Path_Box48" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(764, 614)
+rotation = 3.11858
+
+[node name="Path_Box49" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(780, 614)
+rotation = 3.11858
+
+[node name="Path_Box50" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(797, 614)
+rotation = 3.11858
+
+[node name="Path_Box51" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(814, 614)
+rotation = 3.11858
+
+[node name="Path_Box52" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(831, 614)
+rotation = 3.11858
+
+[node name="Path_Box53" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(848, 614)
+rotation = 3.11858
+
+[node name="Path_Box54" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(865, 614)
+rotation = 3.11858
+
+[node name="Path_Box55" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(882, 614)
+rotation = 3.11858
+
+[node name="Path_Box56" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(899, 614)
+rotation = 3.11858
+
+[node name="Path_Box57" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(915, 614)
+rotation = 3.11858
+
+[node name="Path_Box58" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(932, 614)
+rotation = 3.11858
+
+[node name="Path_Box59" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(949, 614)
+rotation = 3.11858
+
+[node name="Path_Box60" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(966, 614)
+rotation = 3.11858
+
+[node name="Path_Box61" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(983, 614)
+rotation = 3.11858
+
+[node name="Path_Box62" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1000, 614)
+rotation = 3.11858
+
+[node name="Path_Box63" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1017, 614)
+rotation = 3.11858
+
+[node name="Path_Box64" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1034, 614)
+rotation = 3.11858
+
+[node name="Path_Box65" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1052, 614)
+rotation = 3.11858
+
+[node name="Path_Box66" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1069, 614)
+rotation = 3.11858
+
+[node name="Path_Box67" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1086, 614)
+rotation = 3.11858
+
+[node name="Path_Box68" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1103, 614)
+rotation = 3.11858
+
+[node name="Path_Box69" parent="container/root_level1/wall/bottom_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(1120, 614)
+rotation = 3.11858
+
+[node name="right_wall" type="Node2D" parent="container/root_level1/wall"]
+position = Vector2(1144, 1)
+
+[node name="Path_Box" parent="container/root_level1/wall/right_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-18, 273)
+scale = Vector2(-0.759832, -58.7453)
+
+[node name="left_wall" type="Node2D" parent="container/root_level1/wall"]
+position = Vector2(1144, 1)
+
+[node name="Path_Box" parent="container/root_level1/wall/left_wall" instance=ExtResource("5_ihg3k")]
+position = Vector2(-1179, 305)
+scale = Vector2(-0.759832, -58.7453)
+
+[node name="Zombie_Brute" parent="container/root_level1" instance=ExtResource("8_87an7")]
+position = Vector2(-13, 605)
+
+[node name="CloseControl" type="Control" parent="container/root_level1"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="container/root_level1/CloseControl"]
+modulate = Color(0.839216, 0.858824, 0.87451, 0.47451)
+layout_mode = 0
+offset_left = 1010.0
+offset_top = -27.0
+offset_right = 1113.0
+offset_bottom = 50.0
+texture = ExtResource("9_sf2xh")
+
+[node name="CloseButton" type="Button" parent="container/root_level1/CloseControl"]
+layout_mode = 0
+offset_left = 1012.0
+offset_top = -26.0
+offset_right = 1109.0
+offset_bottom = 45.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8g7xv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_27gj7")
+text = "Quit"
+script = ExtResource("10_rblt7")
+
+[node name="Player2" parent="container/root_level1" groups=["player"] instance=ExtResource("4_432sl")]
+position = Vector2(342, 491)
+scale = Vector2(0.7, 0.7)
+collision_mask = 631
+
+[node name="Victory" type="TextureRect" parent="container"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -28.0
+offset_right = 1120.0
+offset_bottom = 620.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_3iv1k")
+
+[node name="Defeat" type="TextureRect" parent="container"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+offset_top = -28.0
+offset_right = 1120.0
+offset_bottom = 620.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_tgu3i")
+
+[node name="OkButton" type="Button" parent="container"]
+visible = false
+offset_left = 515.0
+offset_top = 509.0
+offset_right = 600.0
+offset_bottom = 594.0
+theme_override_fonts/font = ExtResource("14_atfoh")
+theme_override_font_sizes/font_size = 40
+text = "ok"
+script = ExtResource("14_imvod")

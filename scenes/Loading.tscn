@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuassfr62fr2a"]
+
+[ext_resource type="Script" path="res://scenes/play/Level_Container/level1/root_level1.gd" id="1_2tg4j"]
+[ext_resource type="Texture2D" uid="uid://vism31t5bacc" path="res://assets/LoadingPageImage.jpg" id="2_wux00"]
+[ext_resource type="Script" path="res://scenes/ProgressBar.gd" id="3_uiwo3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jymnl"]
+bg_color = Color(0, 0.396078, 1, 0.709804)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 1, 1, 0)
+corner_detail = 4
+
+[node name="Loading" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_2tg4j")
+
+[node name="LoadingPageImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_right = 1692.0
+offset_bottom = 1324.0
+grow_horizontal = 2
+scale = Vector2(0.681, 0.49)
+texture = ExtResource("2_wux00")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 530.0
+offset_right = 960.0
+offset_bottom = 556.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_jymnl")
+value = 10.0
+script = ExtResource("3_uiwo3")

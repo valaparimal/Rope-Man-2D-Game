@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=3 uid="uid://xa4dinh7ci33"]
+
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_teg4m"]
+[ext_resource type="Script" path="res://CharacterCustomizer/CharacterCustomizer.gd" id="2_5b821"]
+[ext_resource type="Texture2D" uid="uid://cbihv75dj175n" path="res://dress/red.png" id="2_jyb58"]
+[ext_resource type="Texture2D" uid="uid://bkb88tooyaaik" path="res://scenes/play/same_assets_fro_all_level/Player2_Images/Idle.png" id="2_vtq5l"]
+[ext_resource type="Texture2D" uid="uid://b7h56ahli0t4f" path="res://hat/hat1.png" id="4_jhfb3"]
+
+[node name="CharacterCustomizer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_teg4m")
+
+[node name="Container" type="Node2D" parent="."]
+script = ExtResource("2_5b821")
+
+[node name="Camera2D" type="Camera2D" parent="Container"]
+position = Vector2(575, 326)
+
+[node name="ClothesSprite" type="Sprite2D" parent="Container"]
+modulate = Color(1, 1, 1, 0.6)
+position = Vector2(295.204, 358.047)
+scale = Vector2(0.269711, 0.177695)
+texture = ExtResource("2_jyb58")
+
+[node name="BaseSprite" type="Sprite2D" parent="Container"]
+position = Vector2(400.75, 246)
+scale = Vector2(3.72266, 2.82812)
+texture = ExtResource("2_vtq5l")
+hframes = 9
+
+[node name="HatSprite" type="Sprite2D" parent="Container"]
+modulate = Color(1, 1, 1, 0.752941)
+position = Vector2(413, 219)
+scale = Vector2(0.09375, 0.0698242)
+texture = ExtResource("4_jhfb3")
+flip_h = true
+
+[node name="EffectsSprite" type="Sprite2D" parent="Container"]
+position = Vector2(161, 9)
+
+[node name="ClothesColorPicker" type="ColorPickerButton" parent="Container"]
+offset_left = 828.0
+offset_top = 464.0
+offset_right = 1153.0
+offset_bottom = 584.0
+scale = Vector2(0.6, 0.6)
+theme_override_font_sizes/font_size = 80
+text = "Color"
+
+[node name="OutfitSelect" type="OptionButton" parent="Container"]
+offset_left = 829.0
+offset_top = 103.0
+offset_right = 1024.0
+offset_bottom = 173.0
+
+[node name="HatSelect" type="OptionButton" parent="Container"]
+offset_left = 832.0
+offset_top = 287.0
+offset_right = 1026.0
+offset_bottom = 361.0
+
+[node name="SaveButton" type="Button" parent="Container"]
+offset_left = 428.0
+offset_top = 522.0
+offset_right = 528.0
+offset_bottom = 572.0
+theme_override_font_sizes/font_size = 25
+text = "Save"
+
+[node name="BackButton" type="Button" parent="Container"]
+offset_left = 293.0
+offset_top = 523.0
+offset_right = 393.0
+offset_bottom = 573.0
+theme_override_font_sizes/font_size = 25
+text = "Back"
+
+[connection signal="pressed" from="Container/BackButton" to="Container" method="_on_back_button_pressed"]

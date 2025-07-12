@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceywk5amgxlps"]
+
+[ext_resource type="Script" path="res://scenes/Player/PlayerInfo.gd" id="1_jpug1"]
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_tosty"]
+[ext_resource type="Script" path="res://scenes/play/HomeButton.gd" id="3_8vh7j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hhb3d"]
+
+[node name="PlayerInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tosty")
+
+[node name="Container" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 473.0
+offset_top = 245.0
+offset_right = 687.0
+offset_bottom = 404.0
+script = ExtResource("1_jpug1")
+
+[node name="LabelName" type="Label" parent="Container"]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 20.0
+offset_right = 107.0
+offset_bottom = 43.0
+text = "Enter Name:"
+label_settings = SubResource("LabelSettings_hhb3d")
+
+[node name="NameInput" type="LineEdit" parent="Container"]
+layout_mode = 2
+offset_left = 117.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 51.0
+
+[node name="LabelAge" type="Label" parent="Container"]
+layout_mode = 2
+offset_left = 12.0
+offset_top = 52.0
+offset_right = 95.0
+offset_bottom = 75.0
+text = "Enter Age:"
+
+[node name="AgeInput" type="SpinBox" parent="Container"]
+layout_mode = 2
+offset_left = 116.0
+offset_top = 55.0
+offset_right = 199.063
+offset_bottom = 86.0
+min_value = 5.0
+value = 5.0
+
+[node name="SubmitButton" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 117.0
+offset_top = 99.0
+offset_right = 196.0
+offset_bottom = 130.0
+text = "Continue"
+
+[node name="BackButton" type="Button" parent="Container"]
+layout_mode = 2
+offset_left = 12.0
+offset_top = 99.0
+offset_right = 91.0
+offset_bottom = 130.0
+text = "Back"
+script = ExtResource("3_8vh7j")

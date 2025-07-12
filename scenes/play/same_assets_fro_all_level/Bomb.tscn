@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmaruh14x5dg2"]
+
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/Bomb.gd" id="1_u2clh"]
+[ext_resource type="Texture2D" uid="uid://dm8xi8f0p8ymn" path="res://assets/bomb.png" id="2_44uso"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qe8wt"]
+
+[node name="Bomb" type="CharacterBody2D" groups=["bomb"]]
+collision_layer = 512
+collision_mask = 193
+script = ExtResource("1_u2clh")
+
+[node name="Bomb" type="Sprite2D" parent="."]
+position = Vector2(1.78814e-07, 0)
+scale = Vector2(0.055, 0.0704225)
+texture = ExtResource("2_44uso")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qe8wt")

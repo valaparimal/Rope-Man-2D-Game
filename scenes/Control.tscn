@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://dq4mgevk54avi"]
+
+[ext_resource type="Script" path="res://scenes/Tutorial.gd" id="1_famst"]
+[ext_resource type="Texture2D" uid="uid://dlp34yly6u0rv" path="res://assets/sprites/tutorial_page1.png" id="2_frnnl"]
+[ext_resource type="Texture2D" uid="uid://dcr3fnqc0hy41" path="res://assets/sprites/tutorial_next_button.png" id="3_h5t0a"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="4_1i58i"]
+[ext_resource type="Script" path="res://scenes/play/HomeButton.gd" id="5_t3xux"]
+
+[sub_resource type="Theme" id="Theme_ylh4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4id88"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvj4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7kdmo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rlk8o"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_famst")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -296.0
+offset_right = 318.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ylh4v")
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_frnnl")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ButtonImage" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 431.0
+offset_right = 548.0
+offset_bottom = 502.0
+texture = ExtResource("3_h5t0a")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="NextButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.029
+anchor_top = -0.055
+anchor_right = -0.029
+anchor_bottom = -0.055
+offset_left = 388.096
+offset_top = 465.175
+offset_right = 565.096
+offset_bottom = 530.175
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4id88")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pvj4v")
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+layout_mode = 0
+offset_left = -127.0
+offset_top = 16.0
+offset_right = -24.0
+offset_bottom = 93.0
+texture = ExtResource("4_1i58i")
+
+[node name="CloseButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = -123.0
+offset_top = 18.0
+offset_right = -26.0
+offset_bottom = 89.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7kdmo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rlk8o")
+text = "Close"
+script = ExtResource("5_t3xux")

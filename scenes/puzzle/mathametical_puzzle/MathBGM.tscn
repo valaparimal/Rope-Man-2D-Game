@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://8lubqre875je"]
+
+[ext_resource type="Script" path="res://scenes/puzzle/mathametical_puzzle/MathBGM.gd" id="1_b6ywh"]
+[ext_resource type="AudioStream" uid="uid://cnb1uswyekrnw" path="res://assets/Music/mathametical_puzzle_music.mp3" id="2_bqhum"]
+
+[node name="MathBgm" type="Node2D"]
+script = ExtResource("1_b6ywh")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_bqhum")
+volume_db = -22.18

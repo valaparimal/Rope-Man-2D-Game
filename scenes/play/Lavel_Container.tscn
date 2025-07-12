@@ -1,0 +1,171 @@
+[gd_scene load_steps=18 format=3 uid="uid://dyomltcksgs8h"]
+
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_6nsas"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="1_tgf1l"]
+[ext_resource type="Script" path="res://scenes/play/ButtonLevel1.gd" id="2_5jfw3"]
+[ext_resource type="Script" path="res://scenes/play/HomeButton.gd" id="3_ypfwu"]
+[ext_resource type="Script" path="res://scenes/play/ButtonLevel2.gd" id="4_bcyg7"]
+[ext_resource type="Script" path="res://scenes/play/ButtonLevel3.gd" id="5_18fuy"]
+[ext_resource type="Script" path="res://scenes/play/ButtonLevel4.gd" id="6_cgu4v"]
+[ext_resource type="Script" path="res://scenes/play/ButtonLevel5.gd" id="7_g33j3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4fuw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5sdc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cidy4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c225t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rts25"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yn2mq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hra01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_42xro"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8dqq"]
+
+[node name="LavelContainer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6nsas")
+
+[node name="ButtonBGLevel1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 287.0
+offset_right = 354.0
+offset_bottom = 351.0
+texture = ExtResource("1_tgf1l")
+
+[node name="ButtonLevel1" type="Button" parent="ButtonBGLevel1"]
+layout_mode = 0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4fuw3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w5sdc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cidy4")
+text = "1"
+script = ExtResource("2_5jfw3")
+
+[node name="ButtonBGLevel2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 287.0
+offset_right = 482.0
+offset_bottom = 351.0
+texture = ExtResource("1_tgf1l")
+
+[node name="ButtonLevel2" type="Button" parent="ButtonBGLevel2"]
+layout_mode = 0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c225t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w5sdc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cidy4")
+disabled = true
+text = "2"
+script = ExtResource("4_bcyg7")
+
+[node name="ButtonBGLevel3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 287.0
+offset_right = 610.0
+offset_bottom = 351.0
+texture = ExtResource("1_tgf1l")
+
+[node name="ButtonLevel3" type="Button" parent="ButtonBGLevel3"]
+layout_mode = 0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rts25")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w5sdc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cidy4")
+disabled = true
+text = "3"
+script = ExtResource("5_18fuy")
+
+[node name="ButtonBGLevel4" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 288.0
+offset_right = 738.0
+offset_bottom = 352.0
+texture = ExtResource("1_tgf1l")
+
+[node name="ButtonLevel4" type="Button" parent="ButtonBGLevel4"]
+layout_mode = 0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yn2mq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w5sdc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cidy4")
+disabled = true
+text = "4"
+script = ExtResource("6_cgu4v")
+
+[node name="ButtonBGLevel5" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 801.0
+offset_top = 288.0
+offset_right = 866.0
+offset_bottom = 352.0
+texture = ExtResource("1_tgf1l")
+
+[node name="ButtonLevel5" type="Button" parent="ButtonBGLevel5"]
+layout_mode = 0
+offset_right = 63.0
+offset_bottom = 62.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hra01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w5sdc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cidy4")
+disabled = true
+text = "5"
+script = ExtResource("7_g33j3")
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 25.0
+offset_right = 1128.0
+offset_bottom = 102.0
+texture = ExtResource("1_tgf1l")
+
+[node name="HomeButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 28.0
+offset_right = 1124.0
+offset_bottom = 99.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_42xro")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x8dqq")
+text = "Home"
+script = ExtResource("3_ypfwu")

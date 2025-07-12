@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bof32x62yc3f4"]
+
+[ext_resource type="Script" path="res://scenes/home_bg_music.gd" id="1_nbmgv"]
+[ext_resource type="AudioStream" uid="uid://cq8bmpodiftfa" path="res://assets/Music/HomeBgMusic.mp3" id="2_oe5d4"]
+
+[node name="HomeBgMusic" type="Node2D"]
+script = ExtResource("1_nbmgv")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_oe5d4")
+volume_db = -14.991

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3573ohyscs43"]
+
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/Arrow.gd" id="1_q7fxj"]
+[ext_resource type="Texture2D" uid="uid://chhdv81gsqfc3" path="res://assets/Arrow/Arrow1.png" id="2_e4cu2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_brjoo"]
+radius = 2.0
+height = 6.0
+
+[node name="Arrow" type="CharacterBody2D" groups=["arrow"]]
+collision_layer = 8
+collision_mask = 4305
+script = ExtResource("1_q7fxj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23, -23)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_brjoo")
+
+[node name="Arrow1" type="Sprite2D" parent="."]
+position = Vector2(15, -23)
+scale = Vector2(0.414063, 0.396484)
+texture = ExtResource("2_e4cu2")

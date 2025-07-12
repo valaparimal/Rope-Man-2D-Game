@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1haqfos755iq"]
+
+[ext_resource type="Script" path="res://scenes/Player/WelcomeScreen.gd" id="1_hjga4"]
+
+[node name="WelcomeScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_hjga4")
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 1.0
+offset_right = 272.0
+offset_bottom = 66.0
+theme_override_font_sizes/font_size = 25
+text = "Rope Man"
+vertical_alignment = 1
+clip_text = true
+
+[node name="AgeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 36.0
+offset_right = 275.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 20
+text = "Age"
+vertical_alignment = 1

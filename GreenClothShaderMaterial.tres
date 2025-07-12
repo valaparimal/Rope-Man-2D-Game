@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cpa7x1hf5afjc"]
+
+[ext_resource type="Shader" path="res://GreenClothShaderMaterial.gdshader" id="1_gh8el"]
+
+[resource]
+shader = ExtResource("1_gh8el")

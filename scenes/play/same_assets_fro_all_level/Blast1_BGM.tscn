@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6pulxa30sfdq"]
+
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/Blast1_BGM.gd" id="1_rrf8y"]
+[ext_resource type="AudioStream" uid="uid://c2nkwgnnusqai" path="res://assets/Music/blast1_bgm.wav" id="2_q408h"]
+
+[node name="Blast1Bgm" type="Node2D"]
+script = ExtResource("1_rrf8y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_q408h")

@@ -1,0 +1,111 @@
+[gd_scene load_steps=8 format=3 uid="uid://cy66t560gs56g"]
+
+[ext_resource type="Texture2D" uid="uid://jeiw8vwnbapo" path="res://assets/home_page/background/background1.png" id="1_a1gdh"]
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_pq6vj"]
+[ext_resource type="Texture2D" uid="uid://daw2reahce0bo" path="res://assets/home_page/Button.png" id="2_irspp"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="3_roju5"]
+[ext_resource type="Script" path="res://scenes/PlayButton.gd" id="4_ef061"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="5_wjgnq"]
+
+[sub_resource type="Theme" id="Theme_13sxl"]
+default_font = ExtResource("3_roju5")
+
+[node name="Home" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pq6vj")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 661.0
+texture = ExtResource("1_a1gdh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 31.0
+scale = Vector2(2, 2)
+text = "PLAYER NAME"
+
+[node name="LavelGridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 106.0
+offset_bottom = 92.0
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -4.0
+offset_right = 6.0
+offset_bottom = 6.0
+
+[node name="CenterButtonControl" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 454.0
+offset_top = 227.0
+offset_right = 686.0
+offset_bottom = 429.0
+
+[node name="PlayButtonWithBackground" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 232.0
+offset_bottom = 86.0
+texture = ExtResource("2_irspp")
+
+[node name="Play" type="Button" parent="CenterButtonControl/PlayButtonWithBackground"]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 5.0
+offset_right = 231.0
+offset_bottom = 87.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 70
+text = "Play"
+script = ExtResource("4_ef061")
+
+[node name="PuzzelButtonWithBackground2" type="TextureRect" parent="CenterButtonControl"]
+offset_left = 1.0
+offset_top = 109.0
+offset_right = 234.0
+offset_bottom = 197.0
+texture = ExtResource("2_irspp")
+
+[node name="Puzzel" type="Button" parent="CenterButtonControl/PuzzelButtonWithBackground2"]
+layout_mode = 2
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 235.0
+offset_bottom = 86.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 65
+text = "Puzzle"
+
+[node name="HelpButtonWithBackground2" type="TextureRect" parent="."]
+offset_left = 1063.0
+offset_top = 571.0
+offset_right = 1137.0
+offset_bottom = 629.0
+texture = ExtResource("5_wjgnq")
+
+[node name="HelpButton" type="Button" parent="HelpButtonWithBackground2"]
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 73.0
+offset_bottom = 60.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 35
+text = "?"

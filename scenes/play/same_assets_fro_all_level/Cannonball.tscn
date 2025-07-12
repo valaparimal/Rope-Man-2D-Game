@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://beqks01hepw6y"]
+
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/Cannonball.gd" id="1_bd4n6"]
+[ext_resource type="Texture2D" uid="uid://cyehgju3hb6xv" path="res://scenes/play/same_assets_fro_all_level/Zomby3_Images/Cannonball2.png" id="1_iukjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_re72i"]
+size = Vector2(14, 8)
+
+[node name="Cannonball" type="CharacterBody2D"]
+collision_layer = 1024
+collision_mask = 75
+script = ExtResource("1_bd4n6")
+
+[node name="Cannonball2" type="Sprite2D" parent="."]
+position = Vector2(0, 4)
+texture = ExtResource("1_iukjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_re72i")

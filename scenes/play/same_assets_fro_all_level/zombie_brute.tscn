@@ -1,0 +1,127 @@
+[gd_scene load_steps=17 format=3 uid="uid://tngsh1g54q0a"]
+
+[ext_resource type="Texture2D" uid="uid://dqqokow068cxq" path="res://scenes/play/same_assets_fro_all_level/NPC_576.png" id="1_ja40o"]
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/zombie_brute.gd" id="1_ngukd"]
+[ext_resource type="PackedScene" uid="uid://lup7n7xxk8l2" path="res://scenes/play/same_assets_fro_all_level/kill_zone.tscn" id="2_33xhx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_be6f8"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 522, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf2ou"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 696, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixbdp"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 870, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xgwi"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 1044, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_momdx"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 1218, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ot7g5"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 1392, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e674s"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 1566, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0ixp"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 0, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gudah"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 174, 230, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hph4n"]
+atlas = ExtResource("1_ja40o")
+region = Rect2(0, 348, 230, 170)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qfa3l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_be6f8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf2ou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixbdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xgwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_momdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ot7g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e674s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0ixp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gudah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hph4n")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8kjb3"]
+radius = 36.0
+height = 86.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d8j5n"]
+radius = 36.0
+height = 88.0
+
+[node name="Zombie_Brute" type="Node2D"]
+script = ExtResource("1_ngukd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14.25, -47.5)
+scale = Vector2(0.589131, 0.558824)
+sprite_frames = SubResource("SpriteFrames_qfa3l")
+animation = &"walking"
+autoplay = "walking"
+frame = 2
+frame_progress = 0.68633
+
+[node name="KillZone" parent="." groups=["enemy"] instance=ExtResource("2_33xhx")]
+collision_layer = 16
+collision_mask = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(7, -34)
+shape = SubResource("CapsuleShape2D_8kjb3")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -55)
+target_position = Vector2(55, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -55)
+target_position = Vector2(-43, 0)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["enemy"]]
+collision_layer = 16
+collision_mask = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" groups=["enemy"]]
+position = Vector2(7, -35)
+shape = SubResource("CapsuleShape2D_d8j5n")

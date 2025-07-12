@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://ce74tu8herehw"]
+
+[ext_resource type="Texture2D" uid="uid://byji05woi4ue4" path="res://assets/green_gems/GreenGem1.png" id="1_uifgm"]
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/GreenGem.gd" id="1_wgnq4"]
+[ext_resource type="Texture2D" uid="uid://b5isspfs0ynqt" path="res://assets/green_gems/GreenGem2.png" id="2_vy1in"]
+[ext_resource type="Texture2D" uid="uid://gwh1h4yyrq1k" path="res://assets/green_gems/GreenGem3.png" id="3_2lm6k"]
+[ext_resource type="Texture2D" uid="uid://b3ti1d4b7om15" path="res://assets/green_gems/GreenGem4.png" id="4_iic6c"]
+[ext_resource type="Texture2D" uid="uid://bed3daei6110u" path="res://assets/green_gems/GreenGem5.png" id="5_m0nqm"]
+[ext_resource type="Texture2D" uid="uid://cb1ko5rawtyuw" path="res://assets/green_gems/GreenGem6.png" id="6_gt8rh"]
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/GreenGemAnimatedSprite2D.gd" id="7_sadxw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cacur"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uifgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vy1in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2lm6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_iic6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m0nqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gt8rh")
+}],
+"loop": true,
+"name": &"gem_animation",
+"speed": 10.0
+}]
+
+[node name="GreenGem" type="Area2D" groups=["green_gem"]]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_wgnq4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cacur")
+animation = &"gem_animation"
+script = ExtResource("7_sadxw")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(1, 0)
+polygon = PackedVector2Array(-1, -7, -7, -2, -7, 2, -1, 7, -1, 7, 5, 2, 5, -2, -1, -7)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

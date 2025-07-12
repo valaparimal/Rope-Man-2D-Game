@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://gctfy01sx7ar"]
+
+[ext_resource type="Texture2D" uid="uid://btltpdxy5p8a3" path="res://assets/sprites/rope_huck1.png" id="1_wk4gf"]
+
+[node name="RopeTarget" type="Node2D"]
+
+[node name="RopeHuck2" type="Sprite2D" parent="."]
+position = Vector2(-26, 78)
+scale = Vector2(0.074707, 0.0979004)
+texture = ExtResource("1_wk4gf")

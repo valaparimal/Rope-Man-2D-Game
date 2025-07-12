@@ -1,0 +1,154 @@
+[gd_scene load_steps=20 format=3 uid="uid://cy66t560gs56g"]
+
+[ext_resource type="Texture2D" uid="uid://jeiw8vwnbapo" path="res://assets/home_page/background/background1.png" id="1_a1gdh"]
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_pq6vj"]
+[ext_resource type="Texture2D" uid="uid://daw2reahce0bo" path="res://assets/home_page/Button.png" id="2_irspp"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="3_roju5"]
+[ext_resource type="Script" path="res://scenes/PlayButton.gd" id="4_ef061"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="5_wjgnq"]
+[ext_resource type="Script" path="res://scenes/Puzzle.gd" id="6_roivt"]
+[ext_resource type="Script" path="res://scenes/HelpButton.gd" id="7_gp4d1"]
+[ext_resource type="Script" path="res://scenes/PlayerInfoButton.gd" id="9_w1sap"]
+[ext_resource type="Texture2D" uid="uid://b7h56ahli0t4f" path="res://hat/hat1.png" id="10_x40vr"]
+[ext_resource type="Script" path="res://scenes/PlayerCustomize.gd" id="11_elo7q"]
+
+[sub_resource type="Theme" id="Theme_13sxl"]
+default_font = ExtResource("3_roju5")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k1uwv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84vjl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7hwq7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e405b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mdxh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4jpnq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qwi2c"]
+
+[node name="Home" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pq6vj")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 661.0
+texture = ExtResource("1_a1gdh")
+
+[node name="PlaceholderNode" type="Node2D" parent="."]
+
+[node name="LavelGridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 106.0
+offset_bottom = 92.0
+
+[node name="CenterButtonControl" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 454.0
+offset_top = 227.0
+offset_right = 686.0
+offset_bottom = 429.0
+
+[node name="PlayButtonWithBackground" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 232.0
+offset_bottom = 86.0
+texture = ExtResource("2_irspp")
+
+[node name="Play" type="Button" parent="CenterButtonControl/PlayButtonWithBackground"]
+layout_mode = 2
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 225.0
+offset_bottom = 81.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_k1uwv")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_84vjl")
+text = "Play"
+script = ExtResource("4_ef061")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CenterButtonControl/PlayButtonWithBackground/Play"]
+
+[node name="PuzzelButtonWithBackground2" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 109.0
+offset_right = 234.0
+offset_bottom = 197.0
+texture = ExtResource("2_irspp")
+
+[node name="Puzzle" type="Button" parent="CenterButtonControl/PuzzelButtonWithBackground2"]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 228.0
+offset_bottom = 81.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7hwq7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e405b")
+text = "Puzzle"
+script = ExtResource("6_roivt")
+
+[node name="HelpButtonWithBackground2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1063.0
+offset_top = 571.0
+offset_right = 1137.0
+offset_bottom = 629.0
+texture = ExtResource("5_wjgnq")
+
+[node name="HelpButton" type="Button" parent="HelpButtonWithBackground2"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 73.0
+offset_bottom = 60.0
+theme = SubResource("Theme_13sxl")
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_roju5")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5mdxh")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4jpnq")
+text = "?"
+script = ExtResource("7_gp4d1")
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerInfoButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 128.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qwi2c")
+script = ExtResource("9_w1sap")
+
+[node name="PlayerCustomize" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 536.0
+offset_right = 1041.0
+offset_bottom = 1568.0
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("10_x40vr")
+script = ExtResource("11_elo7q")

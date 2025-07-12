@@ -1,0 +1,203 @@
+[gd_scene load_steps=16 format=3 uid="uid://cj25fwpxbac7c"]
+
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_x67qf"]
+[ext_resource type="Texture2D" uid="uid://t8d0qfixni17" path="res://assets/ScienceBG.png" id="2_g24k3"]
+[ext_resource type="Texture2D" uid="uid://daw2reahce0bo" path="res://assets/home_page/Button.png" id="3_haaa0"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="4_te234"]
+[ext_resource type="Script" path="res://scenes/puzzle/science_puzzle/Puzzle1Button.gd" id="5_w314e"]
+[ext_resource type="Script" path="res://scenes/puzzle/science_puzzle/Puzzle2Button.gd" id="6_o7i8m"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="7_odcoh"]
+[ext_resource type="Script" path="res://scenes/puzzle/science_puzzle/Puzzle3Button.gd" id="7_u8n5q"]
+[ext_resource type="Script" path="res://scenes/play/HomeButton.gd" id="8_pviyg"]
+[ext_resource type="Script" path="res://scenes/puzzle/reasoning_puzzle/BackButton.gd" id="8_vlmc0"]
+
+[sub_resource type="Theme" id="Theme_ysp71"]
+default_font = ExtResource("4_te234")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v186i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l2m1g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_68iv8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b844u"]
+
+[node name="SciencePuzzle" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_x67qf")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.231373)
+layout_mode = 0
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_g24k3")
+
+[node name="SceneName" type="Label" parent="."]
+layout_mode = 0
+offset_top = 75.0
+offset_right = 1152.0
+offset_bottom = 178.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 15
+theme_override_fonts/font = ExtResource("4_te234")
+theme_override_font_sizes/font_size = 80
+text = "QUIZ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterButtonControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 293.0
+offset_right = 1153.0
+offset_bottom = 473.0
+
+[node name="Puzzle1ButtonWithBackground2" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -141.5
+offset_top = -1.0
+offset_right = 31.5
+offset_bottom = 119.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_haaa0")
+
+[node name="Puzzle1Button" type="Button" parent="CenterButtonControl/Puzzle1ButtonWithBackground2"]
+layout_mode = 2
+offset_left = -2.0
+offset_top = 6.0
+offset_right = 84.0
+offset_bottom = 62.0
+scale = Vector2(2, 2)
+theme = SubResource("Theme_ysp71")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("4_te234")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v186i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l2m1g")
+text = "1"
+script = ExtResource("5_w314e")
+
+[node name="Puzzle2ButtonWithBackground2" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -39.5
+offset_top = -1.0
+offset_right = 133.5
+offset_bottom = 119.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_haaa0")
+
+[node name="Puzzle2Button" type="Button" parent="CenterButtonControl/Puzzle2ButtonWithBackground2"]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 8.0
+offset_right = 88.0
+offset_bottom = 64.0
+scale = Vector2(2, 2)
+theme = SubResource("Theme_ysp71")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("4_te234")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v186i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l2m1g")
+text = "2"
+script = ExtResource("6_o7i8m")
+
+[node name="Puzzle3ButtonWithBackground" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 62.5
+offset_top = -1.0
+offset_right = 235.5
+offset_bottom = 119.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_haaa0")
+
+[node name="Puzzle3Button" type="Button" parent="CenterButtonControl/Puzzle3ButtonWithBackground"]
+layout_mode = 2
+offset_left = -2.0
+offset_top = 8.0
+offset_right = 84.0
+offset_bottom = 64.0
+scale = Vector2(2, 2)
+theme = SubResource("Theme_ysp71")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("4_te234")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v186i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_l2m1g")
+text = "3"
+script = ExtResource("7_u8n5q")
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 25.0
+offset_right = 1128.0
+offset_bottom = 102.0
+texture = ExtResource("7_odcoh")
+
+[node name="HomeButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 28.0
+offset_right = 1124.0
+offset_bottom = 99.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_68iv8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b844u")
+text = "Home"
+script = ExtResource("8_pviyg")
+
+[node name="BackControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="BackControl"]
+layout_mode = 0
+offset_left = 899.0
+offset_top = 25.0
+offset_right = 1002.0
+offset_bottom = 102.0
+texture = ExtResource("7_odcoh")
+
+[node name="BackButton" type="Button" parent="BackControl"]
+layout_mode = 0
+offset_left = 902.0
+offset_top = 27.0
+offset_right = 999.0
+offset_bottom = 98.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_68iv8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b844u")
+text = "Back"
+script = ExtResource("8_vlmc0")

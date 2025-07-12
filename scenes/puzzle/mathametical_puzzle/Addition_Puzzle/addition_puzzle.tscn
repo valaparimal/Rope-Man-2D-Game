@@ -1,0 +1,197 @@
+[gd_scene load_steps=8 format=3 uid="uid://1iuy0jpopwcq"]
+
+[ext_resource type="Script" path="res://scenes/puzzle/mathametical_puzzle/Addition_Puzzle/addition_puzzle.gd" id="1_nei5o"]
+[ext_resource type="Texture2D" uid="uid://daw2reahce0bo" path="res://assets/home_page/Button.png" id="2_ljpnr"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="3_js5yn"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="3_wulhq"]
+[ext_resource type="Script" path="res://scenes/puzzle/mathametical_puzzle/CloseButton.gd" id="5_e35jh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cjifp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kslj7"]
+
+[node name="AdditionPuzzel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_nei5o")
+
+[node name="QuestionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 15.0
+offset_right = 1153.0
+offset_bottom = 147.0
+theme_override_font_sizes/font_size = 35
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 15.0
+offset_right = 456.0
+offset_bottom = 87.0
+theme_override_font_sizes/font_size = 30
+
+[node name="NumberSpawner" type="Timer" parent="."]
+
+[node name="NumberContainer" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="WrongPanel" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 465.0
+offset_bottom = 233.0
+
+[node name="WrongPanelBackground" type="TextureRect" parent="WrongPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 50.5
+offset_top = 78.5
+offset_right = 625.5
+offset_bottom = 321.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ljpnr")
+
+[node name="ExplanationLabel" type="Label" parent="WrongPanel"]
+layout_mode = 2
+offset_left = 296.0
+offset_top = 246.0
+offset_right = 844.0
+offset_bottom = 339.0
+theme_override_fonts/font = ExtResource("3_wulhq")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OkButton" type="Button" parent="WrongPanel"]
+layout_mode = 2
+offset_left = 525.0
+offset_top = 332.0
+offset_right = 619.0
+offset_bottom = 397.0
+text = "OK"
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+modulate = Color(0.839216, 0.858824, 0.87451, 0.47451)
+layout_mode = 0
+offset_left = 1030.0
+offset_top = 12.0
+offset_right = 1133.0
+offset_bottom = 89.0
+texture = ExtResource("3_js5yn")
+
+[node name="CloseButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 14.0
+offset_right = 1130.0
+offset_bottom = 85.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cjifp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kslj7")
+text = "Quit"
+script = ExtResource("5_e35jh")
+
+[node name="InstructionPanel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_right = 828.0
+offset_bottom = 506.0
+
+[node name="InstructionPanelBackground" type="TextureRect" parent="InstructionPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = -161.0
+offset_right = 548.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ljpnr")
+
+[node name="ExplanationLabel" type="Label" parent="InstructionPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.0
+offset_top = -124.0
+offset_right = 496.0
+offset_bottom = 170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_wulhq")
+theme_override_font_sizes/font_size = 25
+text = "You will see a question like:
+7 + ? = 10
+Your task is to figure out what number goes in place of ?
+
+In this case:
+→ 7 + 3 = 10 
+
+So you should click on the number 3 when it falls"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OkButton" type="Button" parent="InstructionPanel"]
+layout_mode = 2
+offset_left = 525.0
+offset_top = 425.0
+offset_right = 619.0
+offset_bottom = 490.0
+text = "OK"
+
+[node name="HelpControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HelpControl"]
+modulate = Color(0.839216, 0.858824, 0.87451, 0.47451)
+layout_mode = 0
+offset_left = 1079.0
+offset_top = 578.0
+offset_right = 1131.0
+offset_bottom = 631.0
+texture = ExtResource("3_js5yn")
+
+[node name="HelpButton" type="Button" parent="HelpControl"]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 581.0
+offset_right = 1130.0
+offset_bottom = 630.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cjifp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kslj7")
+text = "?"

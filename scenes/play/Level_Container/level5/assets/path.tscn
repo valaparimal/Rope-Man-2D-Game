@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://5ns78mlclwyl"]
+
+[ext_resource type="Texture2D" uid="uid://d3gie3t27d31m" path="res://scenes/play/Level_Container/level4/assets/Tile_09.png" id="1_135s0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3p347"]
+size = Vector2(16, 16)
+
+[node name="Path" type="StaticBody2D"]
+collision_layer = 64
+collision_mask = 142
+
+[node name="Tile09" type="Sprite2D" parent="."]
+texture = ExtResource("1_135s0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3p347")

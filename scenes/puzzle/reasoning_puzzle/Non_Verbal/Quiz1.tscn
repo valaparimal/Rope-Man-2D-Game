@@ -1,0 +1,194 @@
+[gd_scene load_steps=13 format=3 uid="uid://biwts25mvxjmt"]
+
+[ext_resource type="Script" path="res://scenes/puzzle/reasoning_puzzle/Non_Verbal/Quiz1.gd" id="1_jrxi0"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="2_qd6qa"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="2_slqhi"]
+[ext_resource type="Script" path="res://scenes/puzzle/reasoning_puzzle/CloseButton.gd" id="3_uecad"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfuyq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hd4ch"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vm83l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lw8ri"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wbahb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eg2o4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6nc3u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abb8m"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jrxi0")
+
+[node name="QuestionImage" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = 127.0
+offset_top = 27.0
+offset_right = 1022.0
+offset_bottom = 577.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+layout_mode = 1
+offset_top = 586.0
+offset_right = 1152.0
+offset_bottom = 640.0
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="ButtonA" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nfuyq")
+text = "A"
+
+[node name="ButtonB" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hd4ch")
+text = "B"
+
+[node name="ButtonC" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vm83l")
+text = "C"
+
+[node name="ButtonD" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lw8ri")
+text = "D"
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+modulate = Color(0.839216, 0.858824, 0.87451, 0.47451)
+layout_mode = 0
+offset_left = 1030.0
+offset_top = 12.0
+offset_right = 1133.0
+offset_bottom = 89.0
+texture = ExtResource("2_qd6qa")
+
+[node name="CloseButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 14.0
+offset_right = 1130.0
+offset_bottom = 85.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wbahb")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eg2o4")
+text = "Quit"
+script = ExtResource("3_uecad")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+offset_left = 189.0
+offset_top = 102.0
+offset_right = 957.0
+offset_bottom = 543.0
+
+[node name="ColorRect2" type="ColorRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.190762, 0.190762, 0.190762, 1)
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.843184, 0.843184, 0.843184, 1)
+
+[node name="HintLabel" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -2.0
+offset_right = -12.0
+offset_bottom = -77.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1.11904e-06, 0.426875, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_slqhi")
+theme_override_font_sizes/font_size = 30
+text = "Choose one appropriyet frame that is missing"
+horizontal_alignment = 3
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 0
+
+[node name="NextButton" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -205.0
+offset_top = -62.0
+offset_right = -22.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6nc3u")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_abb8m")
+text = "Next Question
+"
+
+[node name="ExpressionLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_top = 254.0
+offset_right = 214.0
+offset_bottom = 440.0
+theme_override_font_sizes/font_size = 120
+text = "🥳"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Buttons/ButtonA" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Buttons/ButtonB" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Buttons/ButtonC" to="." method="_on_button_c_pressed"]
+[connection signal="pressed" from="Buttons/ButtonD" to="." method="_on_button_d_pressed"]
+[connection signal="pressed" from="Panel/NextButton" to="." method="_on_next_button_pressed"]

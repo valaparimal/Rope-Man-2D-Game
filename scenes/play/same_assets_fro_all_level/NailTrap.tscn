@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1ndeuf3fjy77"]
+
+[ext_resource type="Script" path="res://scenes/play/same_assets_fro_all_level/NailTrap.gd" id="1_bf2rc"]
+[ext_resource type="Texture2D" uid="uid://dydofdifmwobt" path="res://scenes/play/same_assets_fro_all_level/Traps/4.png" id="1_ek50w"]
+
+[sub_resource type="Animation" id="Animation_ebhn6"]
+resource_name = "Nail"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Nail:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 5, 6, 6, 6, 6]
+}
+
+[sub_resource type="Animation" id="Animation_c7lsn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Nail:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sif6d"]
+_data = {
+"Nail": SubResource("Animation_ebhn6"),
+"RESET": SubResource("Animation_c7lsn")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a22nx"]
+radius = 6.0
+height = 14.0
+
+[node name="NailTrap" type="CharacterBody2D"]
+collision_layer = 2048
+collision_mask = 35
+script = ExtResource("1_bf2rc")
+
+[node name="Nail" type="Sprite2D" parent="."]
+texture = ExtResource("1_ek50w")
+hframes = 7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_sif6d")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 17)
+shape = SubResource("CapsuleShape2D_a22nx")

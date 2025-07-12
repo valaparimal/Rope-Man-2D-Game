@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxd27x23lhlq0"]
+
+[ext_resource type="Texture2D" uid="uid://cbj6kbtsprvai" path="res://assets/sprites/1_Break.png" id="1_myinx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fe001"]
+size = Vector2(22, 22)
+
+[node name="Obstacles" type="StaticBody2D"]
+collision_mask = 10
+
+[node name="1Break" type="Sprite2D" parent="."]
+texture = ExtResource("1_myinx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fe001")

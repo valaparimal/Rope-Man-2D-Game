@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://decrdn6dqpqwd"]
+
+[ext_resource type="Texture2D" uid="uid://bs6wibgjvp6n7" path="res://assets/sprites/Tile_125.png" id="1_agcf5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unmkf"]
+size = Vector2(16, 5)
+
+[node name="ShiftDownPath" type="StaticBody2D" groups=["ShiftDownPath"]]
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_unmkf")
+one_way_collision = true
+
+[node name="Tile125" type="Sprite2D" parent="."]
+texture = ExtResource("1_agcf5")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

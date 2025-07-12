@@ -1,0 +1,154 @@
+[gd_scene load_steps=17 format=3 uid="uid://fgeecxrrrbi4"]
+
+[ext_resource type="Script" path="res://scenes/home.gd" id="1_1ir4b"]
+[ext_resource type="Texture2D" uid="uid://jeiw8vwnbapo" path="res://assets/home_page/background/background1.png" id="1_qru02"]
+[ext_resource type="Texture2D" uid="uid://daw2reahce0bo" path="res://assets/home_page/Button.png" id="2_i6f5b"]
+[ext_resource type="FontFile" uid="uid://daxif0slp5mli" path="res://assets/font/ComicNeueAngular-Regular.ttf" id="3_42mq0"]
+[ext_resource type="Script" path="res://scenes/puzzle/MathameticalPuzzleButton.gd" id="5_g1dkg"]
+[ext_resource type="Script" path="res://scenes/puzzle/ReasoningPuzzleButton.gd" id="6_e5343"]
+[ext_resource type="Texture2D" uid="uid://ctmqhmx7qlxls" path="res://assets/home_page/Button_01.png" id="6_yci5f"]
+[ext_resource type="Script" path="res://scenes/play/HomeButton.gd" id="7_s2i7j"]
+[ext_resource type="Script" path="res://scenes/puzzle/SciencePuzzle.gd" id="7_wh6tt"]
+
+[sub_resource type="Theme" id="Theme_y6wyx"]
+default_font = ExtResource("3_42mq0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jrttd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3wiyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvggj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_81ypx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wuje7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1xwsr"]
+
+[node name="PuzzleContainer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1ir4b")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 661.0
+texture = ExtResource("1_qru02")
+
+[node name="LavelGridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 106.0
+offset_bottom = 92.0
+
+[node name="CenterButtonControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 458.0
+offset_top = 168.0
+offset_right = 696.0
+offset_bottom = 471.0
+
+[node name="MathameticalPuzzleButtonWithBackground" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 232.0
+offset_bottom = 86.0
+texture = ExtResource("2_i6f5b")
+metadata/_edit_use_anchors_ = true
+
+[node name="MathameticalPuzzleButton" type="Button" parent="CenterButtonControl/MathameticalPuzzleButtonWithBackground"]
+layout_mode = 2
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 225.0
+offset_bottom = 81.0
+theme = SubResource("Theme_y6wyx")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_42mq0")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jrttd")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3wiyi")
+text = "Math"
+script = ExtResource("5_g1dkg")
+metadata/_edit_use_anchors_ = true
+
+[node name="ReasoningPuzzelButtonWithBackground2" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 109.0
+offset_right = 234.0
+offset_bottom = 197.0
+texture = ExtResource("2_i6f5b")
+metadata/_edit_use_anchors_ = true
+
+[node name="ReasoningPuzzleButton" type="Button" parent="CenterButtonControl/ReasoningPuzzelButtonWithBackground2"]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 228.0
+offset_bottom = 81.0
+theme = SubResource("Theme_y6wyx")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_42mq0")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pvggj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_81ypx")
+text = "Reasoning"
+script = ExtResource("6_e5343")
+metadata/_edit_use_anchors_ = true
+
+[node name="SciencePuzzelButtonWithBackground3" type="TextureRect" parent="CenterButtonControl"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 216.0
+offset_right = 231.0
+offset_bottom = 304.0
+texture = ExtResource("2_i6f5b")
+metadata/_edit_use_anchors_ = true
+
+[node name="SciencePuzzle" type="Button" parent="CenterButtonControl/SciencePuzzelButtonWithBackground3"]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 228.0
+offset_bottom = 81.0
+theme = SubResource("Theme_y6wyx")
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_42mq0")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pvggj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_81ypx")
+text = "Science"
+script = ExtResource("7_wh6tt")
+metadata/_edit_use_anchors_ = true
+
+[node name="CloseControl" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 25.0
+offset_right = 1128.0
+offset_bottom = 102.0
+texture = ExtResource("6_yci5f")
+
+[node name="HomeButton" type="Button" parent="CloseControl"]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 28.0
+offset_right = 1124.0
+offset_bottom = 99.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wuje7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xwsr")
+text = "Home"
+script = ExtResource("7_s2i7j")
